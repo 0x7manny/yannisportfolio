@@ -20,7 +20,7 @@ export default function Nav({
   );
 
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-30">
+<header className="hidden md:block fixed top-6 left-1/2 -translate-x-1/2 z-30">
       <nav className="flex items-center gap-4 rounded-full bg-zinc-900/80 px-6 py-3 backdrop-blur-md shadow-lg border border-zinc-800">
         {/* Logo / Profile */}
         <div className="flex items-center gap-3 pr-2 border-r border-zinc-800">

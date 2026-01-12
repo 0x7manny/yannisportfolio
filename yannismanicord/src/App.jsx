@@ -12,6 +12,7 @@ import { usePrefersReducedMotion } from "./lib/usePrefersReducedMotion.js";
 import Hero from "./pages/Hero.jsx";
 import Stack from "./pages/Stack.jsx";
 import Experiences from "./pages/Experiences.jsx";
+import MobileNav from "./components/Mobilenav.jsx";
 import Projects from "./pages/Projects.jsx";
 import About from "./pages/About.jsx";
 import TerminalPage from "./pages/TerminalPage.jsx";
@@ -100,6 +101,11 @@ function removeFromHistory(page) {
         id="sakura"
         className="pointer-events-none fixed inset-0 z-0"
       />
+      <MobileNav
+  currentPage={currentPage}
+  onNavigate={setCurrentPage}
+/>
+
 
       {/* ===== APP LAYOUT ===== */}
       <div
